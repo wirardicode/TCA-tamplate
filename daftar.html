@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>TCA</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+      input{
+        caret-color: red;
+        color: red;
+      }
+      select:focus{
+        border: 3px solid #555;
+      }
+      input:focus{
+        color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-secondary" style="background-color: #e3f2fd;">
+      <a class="navbar-brand" href="index.html"><img src="\img\home-page.png" style="width:50px; height: 50px;"></a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation"></button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                  <a class="nav-link" href="intro.html">Intro <span class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="peserta.html">Peserta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="daftar.html">Reg peserta</a>
+            </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Informasi</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                      <a class="dropdown-item" href="kalender.html">Kalender acara <img src="\img\schedule.png"></a>
+                      <a class="dropdown-item" href="#" onclick="refund()">Susunan Pengurus <img src="\img\organization.png"></a>
+                      <a class="dropdown-item" href="admin.html">Detail Administrasi <img src="\img\administrator.png"></a>
+                  </div>
+              </li>
+          </ul>
+          <form class="d-flex my-2 my-lg-0">
+              <input class="form-control me-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">temukan</button>
+          </form>
+      </div>
+  </nav>
+  <!--Body-->
+    <div class ="header display-3">
+        <h1 style="text-align:center;">
+            Member Form Registration of TCA
+        </h1>
+    </div>
+    <form>
+    <ul class="list-group btn btn-dark">
+        <li class="list-group-item bg-secondary"  style="padding-right: 120px;color:white ;">*Name: <br><input required style="color:white; background-color:rgb(5, 17, 55);" type="text" class="col-7"></li>
+        <li class="list-group-item bg-secondary"  style="padding-right: 120px; color:white ;">Company or team name: <br><input style="color:white; background-color:rgb(5, 17, 55);" type="text" class="col-7" placeholder="Don't fill this if you single programer"></li>
+        <li class="list-group-item bg-secondary"  style="padding-right: 120px; color:white ;">*Phone: <br>+<input type="number" class="col-sm-1" style="background-color:rgb(5, 17, 55) ;" placeholder="62"><input required style="color:white; background-color:rgb(5, 17, 55);" type="text" class="col-6" placeholder="8967577****"></li>
+        <li class="list-group-item bg-secondary"  style="padding-right: 120px; color:white ;">*Email: <br><input required style="color:white; background-color:rgb(5, 17, 55);" type="email" class="col-7" placeholder="ex: Example@email.com"></li>
+        <li class="list-group-item bg-secondary"  style="padding-right: 120px; color:white ;">*Category: <br><input required style="color:white; background-color:rgb(5, 17, 55);" type="text" class="col-7" placeholder="ex:Web Development(Full stack)"><br><caption>You can find category on INFORMASI/DETAIL ADMINISTRASI</caption></li>
+        <div class="mb-3">
+          <label for="" class="form-label">Country</label>
+          <select class="form-control" name="" id="">
+            <option selected>--SELECT COUNTRY--</option>
+            <option>Indonesia</option>
+            <option>Malaysia</option>
+            <option>Singapore</option>
+            <option>Brunai Darusalam</option>
+            <option>Thailand</option>
+            <option>Laos</option>
+            <option>Vietnam</option>
+            <option>philippine</option>
+            <option>Cambodia</option>
+            <option>China</option>
+            <option>Japan</option>
+            <option>South Korea</option>
+            <option>India</option>
+            <option>Pakistan</option>
+            <option>Yaman</option>
+            <option>Yordania</option>
+            <option>Uzbezkistan</option>
+            <option>Russia</option>
+            <option>Saudi Arabian</option>
+            <option>Uni Emirat Arab</option>
+            <option>Turki</option>
+            <option>Turkmenistan</option>
+            <option>Qatar</option>
+            <option>Nort Korea</option>
+            <option>Israel</option>
+            <option>Timor Leste</option>
+          </select>
+        </div>
+        <center>
+          <button type="submit" class="btn btn-outline-success col-3">Kirim</button> <button type="reset" class="btn btn-outline-danger col-3">Kosongkan Formulir</button>
+        </center>
+      </ul>     
+    </form>
+    <br>
+    <h1 align="center">Payment Form</h1>
+    <form>
+    <div class="card text-center" id="payThis">
+      <div class="card-header text-bg-dark">
+       <span style="float:right ;"><img src="\img\mastercard.jpg" style="width: 100px; margin-left: 30px;"><img src="\img\visa.png" style="width: 100px; margin-left: 30px;"><img src="\img\credit-card.png" style="width: 100px; margin-left: 30px;"></span>
+      </div>
+      <div class="card-body">
+        <div class="input-group mb-3">
+            <label for="" class="form-label"></label>
+            <input type="text" class="form-control col-12" name="" id="" aria-describedby="" placeholder="Payment  Value (ex:10)" required>
+            <select class="form-select" id="inputGroupSelect01" required>
+            <option selected>currency</option>
+            <option value="USD">USD</option>
+            <option value="SGD">SGD</option>
+            <option value="JPY">JPY</option>
+            <option value="IDR">IDR</option>
+            <option value="RUB">RUB</option>
+          </select>
+        </div><br>
+        <input type="text" class="form-control col-12" name="" id="" aria-describedby="" placeholder="Card Serial Number/card number" required><br>
+        <input type="text" class="form-control col-12" name="" id="" aria-describedby="" placeholder="Card Name" required><br>
+        <p>Expiry card</p> <input type="number" maxlength="2" minlength="2" required>/<input type="number" maxlength="2" minlength="2" required>
+        <br><br>
+        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+          <input type="radio" class="btn-check" name="btnradio" id="btncheck1" autocomplete="off">
+          <label class="btn btn-outline-success" for="btncheck1">Main event</label>
+        
+          <input type="radio" class="btn-check" name="btnradio" id="btncheck2" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btncheck2">External event</label>
+        </div><br><br>
+        <button type="submit" class="btn btn-group-vertical">Submit</button><button type="reset" class="btn btn-group-vertical">Delete all</button>
+      </div>
+    </div>
+    </form>
+    <script src="alret.js"></script>
+</body>
+</html>
